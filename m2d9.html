@@ -6,7 +6,7 @@
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Favorite</title>
+    <title>My music</title>
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -47,7 +47,7 @@
                               </div>
                         </div>
                     
-                    <!-- Rewiew -->
+                    <!-- Lat aLB -->
                     <div class="row">
                         <div class="col-12 text-center my-1"><h3>Last Album</h3>
                             
@@ -69,7 +69,58 @@
                             </div>
                         </div>
                     </div>
-                
+                <!-- TABLE -->
+    <!-- EXERCISE 4++
+        Create a section with an album tracklist inside a Bootstrap table.
+        The row colors of the table must be alternated.
+        There should be a column for the track order number, one for the title and one for the track duration.
+        (If you want, you can also add extra columns)
+    -->
+                <div class="col-12 tracklist mt-3">
+                    <h2>Track list</h2>
+                    <table class="table table-striped">
+                        <thead class="bg-dark text-white">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Track title</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Remove</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Prelude</td>
+                            <td>4:07</td>
+                            <td><button class="removeTrack">Remove</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Inhaler</td>
+                            <td>4:52</td>
+                            <td><button class="removeTrack">Remove</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>My number</td>
+                            <td>3:58</td>
+                            <td><button class="removeTrack">Remove</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Bad Habit</td>
+                            <td>4:40</td>
+                            <td><button class="removeTrack">Remove</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Everytime</td>
+                            <td>4:02</td>
+                            <td><button class="removeTrack">Remove</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
                     
                 </div>
                 <hr>
