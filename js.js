@@ -14,7 +14,7 @@ function showJumb(){
 // Make only one button visible at a time, for each row, when the single row gets hovered. 
 // Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
 // -->
-const trackButt = document.querySelectorAll('.removeTrack')
+let trackButt = document.querySelectorAll('.removeTrack')
 
 for(let but of trackButt){
     but.addEventListener('click', removeTrack)
@@ -75,7 +75,12 @@ function addTrack(){
     // Clearing the values
     trackId.value = ""
     trackTitle.value = ""
-    trackDurat.value = ""
-    trackFeatu.value = ""
+    trackDuration.value = ""
+    trackFeaturing.value = ""
     liveTrack.checked = false
+
+    alert("Track added")
+    
+    trackButt = document.querySelectorAll('.removeTrack')
+
 }
