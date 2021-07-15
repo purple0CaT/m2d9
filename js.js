@@ -15,7 +15,6 @@ function showJumb(){
 // Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
 // -->
 let trackButt = document.querySelectorAll('.removeTrack')
-
 for(let but of trackButt){
     but.addEventListener('click', removeTrack)
     function removeTrack(){
@@ -23,9 +22,12 @@ for(let but of trackButt){
     }
 }
 
+
 // TRACK ADDING
 const trackAdd = document.getElementById('addTrack')
 const tableBody = document.querySelector('.table tbody')
+
+
 
 trackAdd.addEventListener('click', addTrack)
 
@@ -80,7 +82,17 @@ function addTrack(){
     liveTrack.checked = false
 
     alert("Track added")
-    
+
+    // listener renewing
     trackButt = document.querySelectorAll('.removeTrack')
 
+    for(let but of trackButt){
+        but.addEventListener('click', removeTrack)
+        function removeTrack(){
+        but.parentElement.parentElement.remove()
+        }
+    }
+    
 }
+
+
