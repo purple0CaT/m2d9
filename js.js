@@ -42,6 +42,7 @@ function addTrack(){
     let row=document.createElement('tr')
 
     let colH=document.createElement('th')
+    colH.setAttribute('scope', 'row')
     colH.innerText= trackId.value
 
     let colB1=document.createElement('td')
