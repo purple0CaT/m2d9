@@ -22,3 +22,60 @@ for(let but of trackButt){
     but.parentElement.parentElement.remove()
     }
 }
+
+// TRACK ADDING
+const trackAdd = document.getElementById('addTrack')
+const tableBody = document.querySelector('.table tbody')
+
+trackAdd.addEventListener('click', addTrack)
+
+
+function addTrack(){
+    let trackId = document.getElementById('trackID')
+    let trackTitle = document.getElementById('trackTitle')
+    let trackDuration = document.getElementById('trackDuration')
+    let trackFeaturing = document.getElementById('trackFeaturing')
+    let liveTrack = document.getElementById('liveTrack')
+    
+    let row=document.createElement('tr')
+
+    let colH=document.createElement('th')
+    colH.innerText= trackId.value
+
+    let colB1=document.createElement('td')
+    colB1.innerText= trackTitle.value
+
+    let colB2=document.createElement('td')
+    colB2.innerText= trackDuration.value
+
+    let colB3=document.createElement('td')
+    colB3.innerText= trackFeaturing.value
+
+    let colB4=document.createElement('td')
+    if(liveTrack.checked==true){
+        colB4.innerText= "Live track"
+    } else {
+        colB4.innerText= "Not a live track"
+    }
+
+    let colB5=document.createElement('td')
+    let buttn=document.createElement('button')
+    buttn.innerText = "Remove"
+    buttn.classList.add("removeTrack")
+    
+    row.appendChild(colH)
+    row.appendChild(colB1)
+    row.appendChild(colB2)
+    row.appendChild(colB3)
+    row.appendChild(colB4)
+    row.appendChild(colB5)
+    colB5.appendChild(buttn)
+
+    tableBody.appendChild(row)
+    // Clearing the values
+    trackId.value = ""
+    trackTitle.value = ""
+    trackDurat.value = ""
+    trackFeatu.value = ""
+    liveTrack.checked = false
+}
