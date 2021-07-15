@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you will have a short biography section of yourself, and the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+ASSIGNMENT RULES
+- The project must be pushed to a new repository and linked in EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided and documentation.
+- To test the page, open it with your browser and inspect it with developer tools / device emulator.
+- Use Bootstrap4.6 classes to create the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+NOTE:
+Even the most experienced designers need inspiration.
+Spend some time surfing the web researching the best way of representing the albums you love.
+Could be the Amazon way, the Spotify or Apple music way or any other music collection out there.
+HINT: Manage your time in order to finish the structure and responsiveness before focusing on details.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Favorite</title>
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="main.css">
+
+
+
+</head>
+<body>
+
+
+    <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must link every section in your page
+        -->
+        <nav>
+            <div class="px-3 bg-info nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <a class="nav-link active " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                <a class="nav-link " id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Top albums</a>
+                <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Hall of shame</a>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="tab-content" id="nav-tabContent">
+                <!-- HOME TAB -->
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row justify-content-center my-3 text-center" >
+                        <div class="col-12 intro">
+                            <h1>Music Library</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, natus? Dolore repellat labore facere voluptas, animi nobis neque nostrum alias eligendi, et consectetur pariatur numquam aliquid quidem in, maxime doloribus?</p>
+                        </div>
+                    <!-- Rewiew -->
+                    
+                    <div class="row">
+                        <div class="col-12 text-center my-5"><h3>Last Album</h3>
+                            
+                            <div class="album" style="width: 20rem">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e028b04dacf186124a62bc667a7" alt="Card image cap">
+                                    <h3 class="card-title">Holy Fire</h3>
+                                    <h4 class="card-text">Foals</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 1h 27min</li>
+                                    <li>Genre: Rock, ‎Funk rock‎</li>
+                                    <li>Tracklist: 18</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                </div>
+                <hr>
+                <!-- FAV GROUP -->
+                <div class="row justify-content-center text-center">
+                    <div class="col-12"><h2>Rammstein</h2></div>
+                    <div class="col-12">
+                        <div class="row my-2">
+                            <div class="col-4"><img src="https://picsum.photos/200" alt="Image"></div>
+                            <div class="col-8 text-left"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusamus doloribus debitis laborum unde iste, neque nam eum explicabo eius, libero ullam cupiditate deserunt non sit deleniti. Voluptatum, similique rem.
+                            Ad quod pariatur vero, obcaecati architecto ea sunt. Omnis eaque, quia ut officia maxime dolor consequuntur? Fugiat debitis similique harum repellat minima vero vel ducimus. Consequatur facilis accusamus impedit esse!
+                            Cumque repudiandae eum ex inventore quos sunt quod libero? Modi excepturi laudantium, laborum suscipit obcaecati pariatur tenetur? Eveniet, minus accusantium error ea, delectus, exercitationem maiores unde dolorum doloribus perspiciatis tenetur.
+                            Eos, omnis officiis ullam molestias cumque eveniet tenetur maiores perferendis hic temporibus fuga itaque magni similique quas delectus. Placeat asperiores perspiciatis similique! Ea rerum eveniet sapiente adipisci nisi, placeat odio!
+                            Suscipit iusto esse blanditiis perspiciatis nihil, quam sapiente beatae ab repellendus debitis non voluptatibus quaerat dignissimos consectetur est harum facilis doloribus atque tempora aut illo. Eligendi fugit quam animi explicabo!
+                            Nulla in perspiciatis rem voluptatem nisi tempore molestiae expedita accusantium quis quia pariatur possimus, animi autem officia et, laborum accusamus voluptates repudiandae non! Vero, qui. Quidem porro quos dolorum dolor.</p></div>
+                            <div class="col-8 text-right"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ducimus incidunt perspiciatis eum, perferendis quae expedita saepe ipsam repellat? Nulla ea ad illum repudiandae repellat! Accusantium assumenda amet maiores voluptatum.</p></div>
+                            <div class="col-4"><img src="https://picsum.photos/200" alt="Image"></div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+<!-- tapestry of album pictures -->
+                <h2 class="text-center">Album tapestry</h2>
+            <div class="row down-pad">
+                <div class="col-3 padding-0"><img src="https://images11.popmeh.ru/upload/img_cache/45e/45e7d2dadc620ac8cc72312e95599106_ce_1600x853x0x147_cropped_1332x888.webp" alt=""></div>
+                <div class="col-3 padding-0"><img src="https://images11.popmeh.ru/upload/img_cache/45e/45e7d2dadc620ac8cc72312e95599106_ce_1600x853x0x147_cropped_1332x888.webp" alt=""></div>
+                <div class="col-3 padding-0"><img src="https://images11.popmeh.ru/upload/img_cache/45e/45e7d2dadc620ac8cc72312e95599106_ce_1600x853x0x147_cropped_1332x888.webp" alt=""></div>
+                <div class="col-3 padding-0"><img src="https://images11.popmeh.ru/upload/img_cache/45e/45e7d2dadc620ac8cc72312e95599106_ce_1600x853x0x147_cropped_1332x888.webp" alt=""></div>
+                <div class="col-3 padding-0"><img src="https://images11.popmeh.ru/upload/img_cache/45e/45e7d2dadc620ac8cc72312e95599106_ce_1600x853x0x147_cropped_1332x888.webp" alt=""></div>
+                <div class="col-3 padding-0"><img src="https://images11.popmeh.ru/upload/img_cache/45e/45e7d2dadc620ac8cc72312e95599106_ce_1600x853x0x147_cropped_1332x888.webp" alt=""></div>
+                <div class="col-3 padding-0"><img src="https://images11.popmeh.ru/upload/img_cache/45e/45e7d2dadc620ac8cc72312e95599106_ce_1600x853x0x147_cropped_1332x888.webp" alt=""></div>
+                <div class="col-3 padding-0"><img src="https://images11.popmeh.ru/upload/img_cache/45e/45e7d2dadc620ac8cc72312e95599106_ce_1600x853x0x147_cropped_1332x888.webp" alt=""></div>
+            </div>
+            </div>
+
+                <!-- TOP ALBUMS -->
+                <div class="row tab-pane fade my-3 text-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <h2>My top albums</h2>
+                    <div class="row text-center">
+                        <div class="col-6 col-sm-4 col-lg-3 my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e028b04dacf186124a62bc667a7" alt="Card image cap">
+                                    <h3 class="card-title">Holy Fire</h3>
+                                    <h4 class="card-text">Foals</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 1h 27min</li>
+                                    <li>Genre: Rock, ‎Funk rock‎</li>
+                                    <li>Tracklist: 18</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3  my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e028b04dacf186124a62bc667a7" alt="Card image cap">
+                                    <h3 class="card-title">Holy Fire</h3>
+                                    <h4 class="card-text">Foals</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 1h 27min</li>
+                                    <li>Genre: Rock, ‎Funk rock‎</li>
+                                    <li>Tracklist: 18</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3  my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e028b04dacf186124a62bc667a7" alt="Card image cap">
+                                    <h3 class="card-title">Holy Fire</h3>
+                                    <h4 class="card-text">Foals</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 1h 27min</li>
+                                    <li>Genre: Rock, ‎Funk rock‎</li>
+                                    <li>Tracklist: 18</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3  my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e028b04dacf186124a62bc667a7" alt="Card image cap">
+                                    <h3 class="card-title">Holy Fire</h3>
+                                    <h4 class="card-text">Foals</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 1h 27min</li>
+                                    <li>Genre: Rock, ‎Funk rock‎</li>
+                                    <li>Tracklist: 18</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3  my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e028b04dacf186124a62bc667a7" alt="Card image cap">
+                                    <h3 class="card-title">Holy Fire</h3>
+                                    <h4 class="card-text">Foals</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 1h 27min</li>
+                                    <li>Genre: Rock, ‎Funk rock‎</li>
+                                    <li>Tracklist: 18</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3  my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e028b04dacf186124a62bc667a7" alt="Card image cap">
+                                    <h3 class="card-title">Holy Fire</h3>
+                                    <h4 class="card-text">Foals</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 1h 27min</li>
+                                    <li>Genre: Rock, ‎Funk rock‎</li>
+                                    <li>Tracklist: 18</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" >Listen on Spotify</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- WORST ALBUMS -->
+                <div class="row tab-pane fade my-3 text-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <h2>The Hall of Shame</h2>
+                    <div class="row text-center my-3">
+                        <div class="col-6 col-sm-4 col-lg-3  my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e02e99c9f319300912a0e88bcea" alt="Card image cap">
+                                    <h3 class="card-title">Pressed pills</h3>
+                                    <h4 class="card-text">Yung Frown</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 37min</li>
+                                    <li>Genre: --</li>
+                                    <li>Tracklist: 16</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/5QgsiK7BmSFXXwm51BazhR" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3  my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e025c881fee4a3a5ae0906cc6ee" alt="Card image cap">
+                                    <h3 class="card-title">Shift Synch</h3>
+                                    <h4 class="card-text">TrickFinger</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 25min</li>
+                                    <li>Genre: --</li>
+                                    <li>Tracklist: 6</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/3GYyFihj2liZSS9utu7Bc3" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3  my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e02e9085b015e816f3e23f75641" alt="Card image cap">
+                                    <h3 class="card-title">Future Holograms</h3>
+                                    <h4 class="card-text">Valentine</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 40min</li>
+                                    <li>Genre: --</li>
+                                    <li>Tracklist: 13</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/47REbND8DVJaVDttnP3mwV" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3  my-1">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e025c881fee4a3a5ae0906cc6ee" alt="Card image cap">
+                                    <h3 class="card-title">Shift Synch</h3>
+                                    <h4 class="card-text">TrickFinger</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 25min</li>
+                                    <li>Genre: --</li>
+                                    <li>Tracklist: 6</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/3GYyFihj2liZSS9utu7Bc3" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<footer>
+<div class="container">
+    <div class="row text-center align-middle py-2">
+        <div class="col-6"><p>Some Street, Berlin</p></div>
+        <div class="col-6"><a href="#">Contact Me here</a></div>
+    </div>
+</div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
