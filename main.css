@@ -150,7 +150,8 @@ footer a:hover{
     border: 1px solid gray;
 }
 
-#addTrack:hover, .trackBut:hover {
+#addTrackBut:hover, 
+.trackBut:hover {
     box-shadow: 0 1px 10px gray;
     border: 1px solid cadetblue;
     transition: 0.3s;
