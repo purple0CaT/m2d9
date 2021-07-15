@@ -1,0 +1,129 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+.album{
+    position: relative;
+    border: 1px solid rgb(226, 226, 226);
+    box-shadow: 0 1px 5px rgb(122, 122, 122);
+    padding: 1px;
+    background-color: white;
+}
+.album h3{
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+.album h4 {
+    padding: 5px 0;
+}
+.album li{
+    list-style-type: none;
+}
+.album ul{
+    padding: 0;
+}
+.album a{
+    display: block;
+    text-decoration: none;
+    color: rgb(24, 74, 47);
+    margin: 10px 0;
+    border-radius: 3px;
+}
+.album a:hover{
+    background-color: rgb(184, 184, 184);
+    color: white;
+    transition: 0.3s;
+}
+
+.album:not(.home-alb):hover{
+    position: absolute;
+    box-shadow: 1px 1px 15px rgb(80, 80, 80);
+    transition: 0.3s;
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+/* NAVIGATION */
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: white;
+}
+
+.intro {
+    border-bottom: 1px solid black;
+}
+img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+/* FOOTER */
+footer {
+    background-color: #17a2b8;
+}
+footer p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+footer a{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer a:hover{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid black;
+    transition: 0.3s;
+        box-shadow: 0 1PX 1PX rgb(147, 147, 147);
+}
+
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.down-pad{
+    margin: 10px 0;
+}
+
+
+/* m2d9 */
+
+.non-act{
+    opacity: 0;
+}
+
+.jumbotron {
+    transition: 3s;
+    background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293__480.jpg);
+    background-size: cover;
+    color: white;
+}
+
+/* ex.3 */
+
+.badge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: teal;
+    color: white;
+    margin: 2px 1px 0 0;
+    padding-left: 10px;
+    border-bottom-left-radius: 40%;
+    border-top-left-radius: 40%;
+
+
+}
